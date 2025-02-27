@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Webpage title-->
+    <title>Feedback</title>
+    <!--Links to external stylesheet and feedback stylesheet-->
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="additional_student-2.css">
+</head>
+
+<body>
+    <!--Header section design-->
+    <!--Navigation bar and website logo-->
+     <div class="navbar">
+        <img src="images/logo.jpg" class="logo" alt="logo">
+        <nav>
+            <ul>
+                <!--Navigation links-->
+                <li><a href="../student2/home.html">HOME</a></li>
+                <li><a href="../student4/gallery.html">GALLERY</a></li>
+                <li><a href="../student1/shop.html">SHOP</a></li>
+                <li><a href="../student3/profile.html">USER PROFILE</a></li>
+                <li><a href="../student2/feedback.html">FEEDBACK</a></li>
+                <li><a href="../student4/sitemap.html">SITEMAP</a></li>
+                <li><a href="../student3/team.html">TEAM</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--Feedback form section-->
+    <div class="content">
+        <div class="container-form">
+            <!--From for collecting feedback-->
+            <form id="survay-form" action="mailto:sanali.20230064@iit.ac.lk" method="post" enctype="text/plain">
+                <h1>Feedback Form</h1>
+                <h4>Required Fields*</h4><br>
+                <!--Name input field-->
+                <div class="form-group">
+                    <label id="username" for="name">Name</label>
+                    <input type="text" id="name" name="user_name" class="form-control" placeholder="Enter your name">
+                </div>
+
+                <!--Email input field-->
+                <div class="form-group">
+                    <label id="useremail" for="email">Email</label>
+                    <input type="email" id="email" name="user_email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <!--Age selection dropdown-->
+                <div class="form-group">
+                    <p>Age</p>
+                    <select name="Age" id="drpdown" class="form-control" required>
+                        <option value="">Select age group</option>
+                        <option value="10-18">10-18 Years</option>
+                        <option value="18-25">18-25 Years</option>
+                        <option value="26-35">25-35 Years</option>
+                        <option value="36-45">35-45 Years</option>
+                        <option value="46-55">45-55 Years</option>
+                        <option value="56 or Over">56 or over</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </div>       
+
+                <!--Radio button for visiting time-->
+                <div class="form-group">
+                    <p>Was this your first visiting time? </p>
+                    <label>
+                        <input type="radio" value="yes" name="Visiting Time">Yes</label>
+                    <label>
+                        <input type="radio" value="no" name="Visiting Time">No</label>
+                </div>
+
+                <!--Radio button for overall experience-->
+                <div class="form-group">
+                    <p>How did you able to get an overall user experience of the products?</p>
+                        <label>
+                            <input type="radio" value="Excellent" name="Overall Experience" checked>Excellent</label>
+                        <label>    
+                            <input type="radio" value="Good" name="Overall Experience">Good</label>
+                        <label>
+                            <input type="radio" value="Fair" name="Overall Experience">Fair</label>
+                        <label>
+                            <input type="radio" value="Poor" name="Overall Experience">Poor</label>
+                </div>
+                
+                <!--Checkboxes for improvements-->
+                <div class="form-group">
+                    <p>What would you like to see improved in our website? (optional)</p>
+                    <label>
+                        <input type="checkbox" name="Improvements" value="Home Page">Home Page</label>
+                    <label>
+                        <input type="checkbox" name="Improvements" value="Navigation">Navigation</label>
+                    <label>
+                        <input type="checkbox" name="Improvements" value="Content">Content</label>
+                    <label>
+                        <input type="checkbox" name="Improvements" value="Design">Design</label>
+                    <label>
+                        <input type="checkbox" name="Improvements" value="Functionality">Functionality</label>
+                </div>
+                
+                <!--Textarea for comments and requets-->
+                <div class="form-group">
+                    <p>Do you have any additional questions or requests?</p>
+                    <textarea name="comment" id="Error" class="input-textarea" placeholder="Type here...."></textarea>
+                </div>
+                <!--Submit button-->
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        submit
+                    </button>
+                </div>
+            </form>
+        </div> 
+    </div>
+
+    <!--Footer section design-->
+    <div class="footer">
+        <div class="footer-content">
+            <a href="../student1/editor_1.html" target="_blank">Editor-1</a>
+            <a href="../student2/editor_2.html" target="_blank">Editor-2</a>
+            <a href="../student3/pageEditor3.html" target="_blank">Editor-3</a>
+            <a href="../student4/editor_4.html" target="_blank">Editor-4</a>
+        </div>
+    </div>  
+    <!--End footer section-->
+
+</html>
